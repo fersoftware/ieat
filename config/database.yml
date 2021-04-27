@@ -5,17 +5,18 @@ default: &default
 
 development:
   <<: *default
-  database: fer_dev
+  database: db_rails
   host: localhost
   port: 5432
   username: postgres
   password: 123mudar@
+
 test:
   <<: *default
-  database: ieat_test
+  database: db_rails_test
 
 production:
   <<: *default
-  database: ieat_production
+  database: db_rails_prod
   username: ieat
   password: <%= ENV['IEAT_DATABASE_PASSWORD'] %>
