@@ -1,48 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8276874-af86-426e-a9b8-22a579cbcfb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ieat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/products_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/restaurants_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/restaurant.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/_restaurant.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/restaurants/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210427025152_add_devise_to_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210427030041_create_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210427134326_create_restaurants.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210427135548_create_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+    <list default="true" id="a8276874-af86-426e-a9b8-22a579cbcfb1" name="Default Changelist" comment="Atualização CRUD">
+      <change afterPath="$PROJECT_DIR$/.rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/restaurants.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/restaurant_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ieat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ieat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/restaurant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/restaurant.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ERB File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -191,8 +165,16 @@
       <workItem from="1619496073881" duration="861000" />
       <workItem from="1619530313793" duration="3677000" />
       <workItem from="1619537921247" duration="3243000" />
-      <workItem from="1619561968997" duration="1820000" />
+      <workItem from="1619561968997" duration="9175000" />
     </task>
+    <task id="LOCAL-00001" summary="Atualização CRUD">
+      <created>1619563939221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619563939221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,5 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Atualização CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização CRUD" />
   </component>
 </project>
