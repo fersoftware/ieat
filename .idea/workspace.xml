@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8276874-af86-426e-a9b8-22a579cbcfb1" name="Default Changelist" comment="Atualização CRUD">
-      <change afterPath="$PROJECT_DIR$/.rspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/restaurants.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/restaurant_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+    <list default="true" id="a8276874-af86-426e-a9b8-22a579cbcfb1" name="Default Changelist" comment="Implantando tests">
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/orders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/orders_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/jobs/restaurant_notifier_job.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/_customer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/home/_restaurant.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/create.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/my_initializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/sidekiq.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210428010832_add_role_to_users.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210428011129_add_user_id_to_restaurants.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210428023638_create_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/helpers/orders_helper_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/jobs/restaurant_notifier_job_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/requests/orders_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/views/orders/create.html.erb_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ieat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ieat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/restaurant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/restaurant.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/restaurants/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/restaurants/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +184,7 @@
       <workItem from="1619496073881" duration="861000" />
       <workItem from="1619530313793" duration="3677000" />
       <workItem from="1619537921247" duration="3243000" />
-      <workItem from="1619561968997" duration="9175000" />
+      <workItem from="1619561968997" duration="18646000" />
     </task>
     <task id="LOCAL-00001" summary="Atualização CRUD">
       <created>1619563939221</created>
@@ -174,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619563939221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implantando tests">
+      <created>1619571837762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619571837762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +221,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Atualização CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização CRUD" />
+    <MESSAGE value="Implantando tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implantando tests" />
   </component>
 </project>
